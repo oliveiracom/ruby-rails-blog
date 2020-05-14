@@ -1,20 +1,22 @@
-
+<div id="BOX">
 <p>
 <strong>Title:</strong>
 <%= @article.title %>
 </p>
 
 <p>
-<strong>Text:</strong>
 <%= @article.text %>
 </p>
 
+<div id="COMMENTS">
 <h2>Comments</h2>
 <%= render @article.comments %>
 <hr>
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
+</div>
 
-<%= link_to 'Back', articles_path %>
-<%= link_to 'Home', controller: 'welcome' %>
+<%= link_to 'Back', articles_path, class: "btn btn-info" %>
+<%= link_to 'Home', {controller: 'welcome'}, class: "btn btn-info" %>
+</div>
 

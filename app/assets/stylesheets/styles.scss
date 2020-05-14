@@ -5,6 +5,80 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    color:#333;
+    background: #5C14A1 url("/assets/confetti.png") repeat center;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn, input[type='submit'] {
+        padding: 6px 25px;
+        background: #F8AC38;
+        color:#5C14A1;
+        font-weight: bolder;
+        border: none;
+        border-radius: 3px;
+        margin:4px 15px;
+
+        &.btn-info {
+            background: aliceblue;
+        }
+
+        &:hover {
+            background:#6ECBF2;
+        }
+    }
+
+    #BOX {
+        padding:25px;
+        background: #fbfbfb;
+        border-radius: 8px;
+        box-shadow:0 4px 8px rgba(0,0,0,0.5);
+        width:95%;
+        margin: 0 auto;
+        text-align: center;
+
+        label {
+            margin-bottom:10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        input[type='text'], textarea {
+            border:1px solid #ccc;
+            width: 80%;
+            margin-bottom: 35px;
+            padding: 4px 15px;
+            border-radius: 4px;
+            color: #5C14A1;
+        }
+
+        textarea {
+            min-height: 220px;
+        }
+
+        #COMMENTS {
+            font-size:13px;
+
+            h2 {
+                font-size:16px
+            }
+
+            input[type='text'], textarea {
+                width: 50%;
+                display: block;
+                margin: 8px auto;
+            }
+
+            .comment_box {
+                margin-bottom:25px;
+            }
+        }
+    }
+
 }
 
 .column{
@@ -14,7 +88,8 @@ body {
     flex-direction: row;
 }
 
-#BOX {
-    width:60%;
-    margin: 0 auto;
-}
+@media screen and (max-width: 770px){
+    body   { 
+        margin:60px;
+    }
+ }
