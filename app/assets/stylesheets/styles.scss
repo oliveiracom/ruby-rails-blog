@@ -1,3 +1,6 @@
+$break-small: 480px;
+$break-large: 1200px;
+
 body {
     display: flex;
     height: 100vh;
@@ -10,6 +13,8 @@ body {
     background: #5C14A1 url("/assets/confetti.png") repeat center;
     font-size: 14px;
 
+    
+
     a {
         text-decoration: none;
     }
@@ -21,7 +26,8 @@ body {
         font-weight: bolder;
         border: none;
         border-radius: 3px;
-        margin:4px 15px;
+        margin:15px auto;
+        display: block;
 
         &.btn-info {
             background: aliceblue;
@@ -37,7 +43,7 @@ body {
         background: #fbfbfb;
         border-radius: 8px;
         box-shadow:0 4px 8px rgba(0,0,0,0.5);
-        width:95%;
+        width:60%;
         margin: 0 auto;
         text-align: center;
 
@@ -60,6 +66,16 @@ body {
             min-height: 220px;
         }
 
+        table {
+            padding:15px;
+            tr {
+                padding:200px 0;
+                
+            }
+
+        }
+
+
         #COMMENTS {
             font-size:13px;
 
@@ -77,8 +93,13 @@ body {
                 margin-bottom:25px;
             }
         }
-    }
 
+        .credits{
+            font-size: 11px;
+            color:#ccc;
+            margin: 15px 15px;
+        }
+    }
 }
 
 .column{
@@ -88,8 +109,8 @@ body {
     flex-direction: row;
 }
 
-@media screen and (max-width: 770px){
-    body   { 
-        margin:60px;
+@media screen and (max-width: 480px){
+    #BOX{
+        width:95%;
     }
  }
