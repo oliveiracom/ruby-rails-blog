@@ -3,9 +3,9 @@ $break-large: 1200px;
 
 body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width:100%;
-    margin: 0 auto;
+    margin: 15px auto;
     align-items: center;
     justify-content: space-between;
     font-family: 'Nunito', sans-serif;

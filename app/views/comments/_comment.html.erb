@@ -1,4 +1,4 @@
-<div class="comment_box"><p>
+<div class="comment_box" id="comment-<%= comment.id%>"><p>
 <strong>Commenter:</strong>
 <%= comment.commenter %>
 </p>
@@ -9,8 +9,9 @@
 </p>
 
 <p>
-  <%= link_to 'Delete Comment', [comment.article, comment],
+  <button class="btn btn-info" id="<%= comment.id%>" onClick="hideIt(this.id)">Ocultar Comentario</button>
+  <button class="btn btn-info"><%= link_to 'Delete Comment', [comment.article, comment],
                method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+               data: { confirm: 'Are you sure?' } %></button>
 </p>
 </div>
